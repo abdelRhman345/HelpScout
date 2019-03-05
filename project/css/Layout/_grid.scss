@@ -1,0 +1,275 @@
+// Trusted
+.trusted {
+    margin: 50px 0;
+    padding: 50px 0;
+    @media #{$mediaExSmall} {
+        margin: 50px auto;
+    }
+    @media #{$mediaSmall} {
+        margin: 50px auto;
+    }
+    @media #{$mediaMedium} {
+        margin: 50px auto;
+    }
+    .card {
+        width: 350px;
+        border: none;
+        box-shadow: 0 5px 20px 5px rgba(#000000, .1);
+        overflow: hidden;
+        transition: .5s;
+        img {
+            transition: .5s;
+        }
+        .card-body {
+            .card-text {
+                font-size: 14px;
+                margin: 20px 0 25px;
+                color: $primaryColor;
+                word-spacing: 2px;
+                text-transform: capitalize;
+                @media #{$mediaExSmall} {
+                    font-size: 12px;
+                    word-spacing: 1px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 13px;
+                    word-spacing: 1px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 14px;
+                    word-spacing: 1px;
+                }
+            }
+            .blockquote-footer {
+                font-size: 14px;
+                word-spacing: 2px;
+                text-transform: capitalize;
+                @media #{$mediaExSmall} {
+                    font-size: 12px;
+                    word-spacing: 1px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 12px;
+                    word-spacing: 1px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 13px;
+                }
+            }
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                @media #{$mediaExSmall} {
+                    font-size: 12px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 12px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 13px;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: 0 0px 20px 2px rgba(#000000, .1);
+            img {
+                transform: scale(1.1)
+            }
+        }
+    }
+    .text-trusted {
+        width: 250px;
+        h3 {
+            font: {
+                weight: 800;
+            }
+            line-height: 38px;
+            margin: 25px 0;
+            color: $brandColor;
+            @media #{$mediaExSmall} {
+                font-size: 23px;
+                line-height: 30px;
+                margin: 45px 0 10px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 23px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 25px;
+                line-height: 33px;
+            }
+        }
+    }
+    .img-trusted {
+        img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Our Pepole
+.our-people {
+    margin: 50px 0;
+    padding: 50px 0;
+    .header-our-pepole {
+        padding: 20px 0 60px;
+        text-align: center;
+        h2 {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: $brandColor;
+            text-transform: capitalize;
+            margin-bottom: 15px; 
+            @media #{$mediaExSmall} {
+                font-size: 20px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 22px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 23px;
+            }
+        }
+        p {
+            font-size: 14px;
+            color: $primaryColor;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            @media #{$mediaExSmall} {
+                font-size: 12px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 12px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 13px;
+            }
+        }
+    }
+    .text-our-pepole {
+        margin: 40px 0;
+        @media #{$mediaExSmall} {
+            margin: 10px 0;
+        }
+        @media #{$mediaSmall} {
+            margin: 15px 0;
+        }
+        @media #{$mediaMedium} {
+            margin: 20px 0;
+        }
+        .text {
+            h5 {
+                font: {
+                    size: 18px;
+                    weight: 800
+                }
+                color: $mainColor;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                word-spacing: 1px;
+                @media #{$mediaExSmall} {
+                    font: {
+                        size: 15px;
+                    }
+                }
+                @media #{$mediaSmall} {
+                    font: {
+                        size: 16px;
+                    }
+                }
+                @media #{$mediaMedium} {
+                    font: {
+                        size: 16px;
+                    }
+                }
+            }
+            p {
+                font-size: 12px;
+                font-weight: 600;
+                color: $primaryColor;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                text-transform: capitalize;
+                @media #{$mediaExSmall} {
+                    font: {
+                        size: 11px;
+                        weight: 500;
+                    }
+                }
+                @media #{$mediaSmall} {
+                    font: {
+                        size: 11px;
+                        weight: 500;
+                    }
+                }
+                @media #{$mediaMedium} {
+                    font: {
+                        size: 12px;
+                        weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Get Start
+.get-start {
+    margin: 50px auto;
+    padding: 50px 0;
+    width: 500px;
+    @media #{$mediaExSmall} {
+        width: auto;
+    }
+    @media #{$mediaSmall} {
+        width: auto;
+    }
+    @media #{$mediaMedium} {
+        width: auto;
+    }
+    .text-get-start {
+        padding: 30px 0 60px;
+        text-align: center;
+        width: 100%;
+        h2 {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: $brandColor;
+            text-transform: capitalize;
+            margin-bottom: 25px; 
+            @media #{$mediaExSmall} {
+                font-size: 20px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 22px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 23px;
+            }
+        }
+        p {
+            font-size: 14px;
+            color: $primaryColor;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+            @media #{$mediaExSmall} {
+                font-size: 12px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 12px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 13px;
+            }
+        }
+    }
+}

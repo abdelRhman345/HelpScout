@@ -1,0 +1,138 @@
+// Button Gloabal
+.bn {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    color: rgba($mainColor, .8);
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 4px 25px;
+    transition: background-color .3s linear;
+    letter-spacing: 2px;
+    @media #{$mediaExSmall} {
+        font-size: 12px;
+        margin: 10px auto !important;
+        padding: 4px 20px;
+    }
+    @media #{$mediaSmall} {
+        font-size: 12px;
+        margin: 20px 5px !important;
+        padding: 4px 20px;
+    }
+    @media #{$mediaMedium} {
+        font-size: 14px;
+        margin: 10px auto !important;
+    }
+}
+// Button Navbar
+.navbar {
+    .collapse {
+        form {
+            .bn {
+                @media #{$mediaLarge} {
+                    margin: 5px 0 !important;
+                }
+                &:nth-child(1) {
+                    border: 1px solid rgba($primaryColor, .4);
+                    &:hover {
+                        color: #fff;
+                        background-color: $mainColor;
+                        border: 1px solid $mainColor;
+                    }
+                }
+                &:nth-child(2) {
+                    color: #fff;
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                    box-shadow: 0 3px 5px 0 rgba($brandColor, .28);
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid rgba($primaryColor, .4);
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Button Header
+.header {
+    .text-header {
+        form {
+            .bn {
+                margin-top: 40px;
+                @media #{$mediaLarge} {
+                    margin: 10px auto !important;
+                    padding: 4px 12px;
+                }
+                &:nth-child(2) {
+                    border: 1px solid rgba($primaryColor, .4);
+                    &:hover {
+                        color: #fff;
+                        background-color: $mainColor;
+                        border: 1px solid $mainColor;
+                    }
+                }
+                &:nth-child(1) {
+                    color: #fff;
+                    background-color: $mainColor;
+                    border: 1px solid rgba($primaryColor, .4);
+                    box-shadow: 0 3px 5px 0 rgba($brandColor, .28);
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid rgba($primaryColor, .4);
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Trusted
+.trusted {
+    .text-trusted {
+        form {
+            .bn {
+                border: 1px solid rgba($primaryColor, .4);
+                padding: 8px 25px;
+                margin-bottom: 40px;
+                &:hover {
+                    color: #fff;
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                }
+            }
+        }
+    }
+}
+
+// Get Start
+.get-start {
+    form {
+        .bn {
+            padding: 8px 25px;
+            &:nth-child(2) {
+                border: 1px solid rgba($primaryColor, .4);
+                &:hover {
+                    color: #fff;
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                }
+            }
+            &:nth-child(1) {
+                color: #fff;
+                background-color: $mainColor;
+                border: 1px solid $mainColor;
+                box-shadow: 0 3px 5px 0 rgba($brandColor, .28);
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid rgba($primaryColor, .4);
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

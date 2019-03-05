@@ -1,0 +1,73 @@
+// Haeder
+.header {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    .text-header {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h2 {
+            font: {
+                size: 40px; 
+                weight: 700;
+            }
+            line-height: 48px;
+            margin: 25px 0;
+            color: $brandColor;
+            @media #{$mediaExSmall} {
+                font-size: 28px;
+                line-height: 35px;
+                margin: 15px 0;
+            }
+            @media #{$mediaSmall} {
+                font-size: 33px;
+                line-height: 38px;
+                margin: 15px 0;
+            }
+            @media #{$mediaMedium} {
+                font-size: 35px;
+                line-height: 40px;
+                margin: 20px 0;
+            }
+            @media #{$mediaLarge} {
+                font-size: 35px;
+                line-height: 40px;
+                margin: 20px 0;
+            }
+        }
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            color: $primaryColor;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            @media #{$mediaExSmall} {
+                font-size: 13px;
+                line-height: 23px;
+            }
+            @media #{$mediaSmall} {
+                font-size: 13px;
+                line-height: 23px;
+            }
+            @media #{$mediaMedium} {
+                font-size: 14px;
+                line-height: 25px;
+            }
+            @media #{$mediaLarge} {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+    img {
+        height: 650px;
+        @media #{$mediaExSmall} {
+            width: 100%;
+            height: auto
+        }
+        @media #{$mediaSmall} {
+            width: 100%;
+            height: auto
+        }
+    }
+}

@@ -1,0 +1,189 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title HELPSCOUT
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato")
+    body
+        // Navigation
+        //- Navigation
+        nav(class="navbar navbar-expand-lg navbar-light")
+            a(class="navbar-brand", href="#")
+                svg(class="logo-mark-svg", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 137.5 166", role="img", height="50px")
+                    path(fill="#1087D8", class="logo-mark--st0", d="M9.9 97.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 48.6C3.9 54.8 0 63.5 0 73c0 9.5 3.8 18 9.9 24.2zM127.6 68.8L79 117.4c-6.3 6.2-10.2 14.9-10.2 24.4 0 9.4 3.8 18 9.9 24.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.5-3.8-18-9.9-24.2zM127.3 48.7s0-.1 0 0c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 117.4C3.9 123.6 0 132.3 0 141.8c0 9.4 3.8 18 9.9 24.2L127.3 48.7z")
+                span Help Scout
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHelpScout" aria-controls="navHelpScout" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
+
+            div(class="collapse navbar-collapse" id="navHelpScout")
+                - var Navbar = ['product', 'Customer', 'Pricing', 'Get Help', 'Content']
+                ul(class="navbar-nav m-auto")
+                    each val in Navbar
+                        li.nav-item
+                            a(href="#", class="nav-link")= val
+                form(class="form-inline")
+                    button(class="bn mx-2" type="submit") Log In
+                    button(class="bn mx-2" type="submit") Sing Up
+
+        // Header
+        //- Header
+        section(class="header")
+            .container
+                .row
+                    div(class="col-12 col-md-5")
+                        .text-header
+                            h2 There's a Better Way To Talk With Your Customers.
+                            p Help Scout Is Designed With Your Customers In Mind. Provide email and Live Chat With a Personal Touch, and Deliver Help Content Right Where Your Customers Need it, all In One Place, all For One Low Price.
+                            form(class="form-inline my-2 my-lg-0")
+                                button(class="bn" type="submit") Get Started
+                                button(class="bn mx-2" type="submit") Explore The Product
+                    div(class="col-12 col-md-5 offset-md-2")
+                        img(src="img/hero-illustration.jpeg", alt="")
+        
+        // Section Trusted
+        //- Section Trusted
+        section(class="trusted")
+            .container
+                .row
+                    div(class="col-12 col-md-6 offset-md-0 offset-sm-1")
+                        .card
+                            img(src="img/basecamp.jpeg", class="card-img-top", alt="")
+                            .card-body
+                                p.card-text "We Chose Help Scout Because thier support is really great. It's in line with our values and how we want support to be for our customers."
+                                footer.blockquote-footer Kristin, Head Of Customer Support
+                                span Basecamp
+                    div(class="col-12 col-md-5 offset-sm-1")
+                        .text-trusted
+                            h3 Trusted by More than 8.000 businesses in 140 countries.
+                            form(class="form-inline my-2 my-lg-0")
+                                button(class="bn" type="submit") Meet Our Customers
+                        .img-trusted
+                            .row
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/grubhub.png', alt="")
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/tradesy.png', alt="")
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/trello.png', alt="")
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/pocket.png', alt="")
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/buffer.png', alt="")
+                                div(class="col-12 col-md-4 col-sm-6")
+                                    img(src='img/funt_needle.png', alt="")
+        
+        // Section Our People
+        //- Section Our People
+        section(class="our-people")
+            .container
+                .header-our-pepole
+                    h2 Our Pepole Make The Difference
+                    p We're an extension of your customer service team, and all of our resource are free.
+                .row
+                    div(class="col-12 col-md-5")
+                        div.text-our-pepole
+                            .row
+                                div(class="col-2")
+                                    img(src="img/asset10.jpeg", class="w-100", alt="")
+                                div(class="col-10")
+                                    div.text
+                                        h5 World Class 24x6 support
+                                        p This Friendly and knowledgable folks are available via email and chat. 
+                        div.text-our-pepole
+                            .row
+                                div(class="col-2")
+                                    img(src="img/asset11.jpeg", class="w-100", alt="")
+                                div(class="col-10")
+                                    div.text
+                                        h5 Traning &amp; Classes
+                                        p This Friendly and knowledgable folks are available via email and chat. 
+                        div.text-our-pepole
+                            .row
+                                div(class="col-2")
+                                    img(src="img/asset12.jpeg", class="w-100", alt="")
+                                div(class="col-10")
+                                    div.text
+                                        h5 Edcuation Form Help
+                                        p This Friendly and knowledgable folks are available via email and chat. 
+                    div(class="col-12 col-md-6 offset-md-1")
+                        img(src="img/asset13.jpeg", class="card-img-top", alt="")
+
+        // Section Get Start
+        //- Section Get Start
+        section(class="get-start")
+            .container
+                div(class="text-center text-get-start")
+                    h2 Get Start With Help Scout
+                    p A better exprience for your customers, fewer headaches for your team. You'll be set up in minutes.
+                    form(class="form-inline")
+                        button(class="bn" type="submit") Free 15-days trial
+                        button(class="bn mx-2" type="submit") Get a live Demo
+
+        // Footer
+        //- Footer
+        footer.footer
+            .container
+                .row
+                    div(class="col-12 col-md-4")
+                        .text-footer 
+                            svg(class="logo-mark-svg", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 137.5 166", role="img", height="50px")
+                                path(fill="#1087D8", class="logo-mark--st0", d="M9.9 97.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 48.6C3.9 54.8 0 63.5 0 73c0 9.5 3.8 18 9.9 24.2zM127.6 68.8L79 117.4c-6.3 6.2-10.2 14.9-10.2 24.4 0 9.4 3.8 18 9.9 24.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.5-3.8-18-9.9-24.2zM127.3 48.7s0-.1 0 0c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 117.4C3.9 123.6 0 132.3 0 141.8c0 9.4 3.8 18 9.9 24.2L127.3 48.7z")
+                            p Tools for the world's most customer-centric businesses
+                    div(class="col-12 col-md-8")
+                        .row
+                            div(class="col-12 col-lg-3 col-md-6")
+                                h5 Features
+                                - var Features = ['Help Desk', 'Knowledge Base', 'Live Chat', 'Integrations', 'Reports', 'IOS / Android', 'More Features', 'Company Plan']
+                                ul(class="navbar-nav")
+                                    each val in Features
+                                        li(class="nav-item")
+                                            a(href="#", class="nav-link")= val
+                            div(class="col-12 col-lg-3 col-md-6")
+                                h5 Learn
+                                - var Learn = ['Customer Support Skills', 'Designing Knowledge Bases', 'Chat &amp; Messaging', 'Customer Support Benchmarks', 'Support-Driven Growth']
+                                ul(class="navbar-nav")
+                                    each val in Learn
+                                        li(class="nav-item")
+                                            a(href="#", class="nav-link")= val
+                            div(class="col-12 col-lg-3 col-md-6")
+                                h5 Company
+                                - var Learn = ['About Us', 'Careers', 'Terms of Service', 'Security', 'Privacy']
+                                ul(class="navbar-nav")
+                                    each val in Learn
+                                        li(class="nav-item")
+                                            a(href="#", class="nav-link")= val
+                            div(class="col-12 col-lg-3 col-md-6")
+                                h5 Get Help
+                                - var Learn = ['Developers', 'Help Docs', 'Free Training', 'Contact Sales', 'Status']
+                                ul(class="navbar-nav")
+                                    each val in Learn
+                                        li(class="nav-item")
+                                            a(href="#", class="nav-link")= val
+                hr
+                .row
+                    div(class="col-12 col-md-5 text-center text-md-left")
+                        .social
+                            ul(class="navbar-nav")
+                                li(class="nav-item")
+                                    a(href="#", class="nav-link")
+                                        i(class="fab fa-twitter")
+                                li(class="nav-item")
+                                        a(href="#", class="nav-link")
+                                            i(class="fab fa-facebook-square")
+                                li(class="nav-item")
+                                        a(href="#", class="nav-link")
+                                            i(class="fab fa-linkedin")
+                    div(class="col-12 col-md-4 offset-md-3 text-center text-md-right")
+                        .copyright Made By: AbdelRhman  
+                            span &copy; 2019 Help Scout
+
+        script(src="http://localhost:35729/livereload.js")
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+        script(src="js/script.js")
