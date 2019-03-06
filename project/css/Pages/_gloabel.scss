@@ -1,3 +1,45 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+// Header
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+// Pargraph
+p {
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #555;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 0.5px rgba(85, 85, 85, 0.3);
+    @media #{$mediaExSmall} {
+        font: {
+            size: 12px;
+        }
+    }
+    @media #{$mediaSmall} {
+        font: {
+            size: 12px;
+        }
+    }
+    @media #{$mediaMedium} {
+        font: {
+            size: 13px;
+        }
+    }
+    @media #{$mediaLarge} {
+        font: {
+            size: 13px;
+        }
+    }
+}

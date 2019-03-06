@@ -1,0 +1,1 @@
+$(window).on("load",function(){"use strict";$(".loading-screen").fadeOut(3e3,function(){$(this).remove(),$("body").css("overflow","auto")})});

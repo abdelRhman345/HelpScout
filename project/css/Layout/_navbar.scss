@@ -10,25 +10,22 @@
             margin-left: 10px;
         }
     }
-    .collapse {
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    font-size: 12px;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    padding: 4px 25px;
-                    letter-spacing: 2px;
-                    border: 1px solid transparent;
-                    border-radius: 4px;
-                    transition: .2s linear;
-                    &:hover {
-                        background-color: transparent;
-                        border: 1px solid rgba($primaryColor, .4);
-                        color: $mainColor;
-                        box-shadow: 0 3px 5px 0 rgba($brandColor, .28);
-                    }
-                }
+    .navbar-nav {
+        .nav-item {
+            font-size: 12px !important;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding-left: 25px;
+            padding-right: 25px;
+            letter-spacing: 2px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: .2s linear;
+            &:hover {
+                background-color: transparent;
+                border: 1px solid rgba($primaryColor, .4);
+                color: $mainColor;
+                box-shadow: 0 3px 5px 0 rgba($brandColor, .28);
             }
         }
     }

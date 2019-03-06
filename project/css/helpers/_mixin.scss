@@ -1,0 +1,12 @@
+// Animation
+@mixin keyFrame($animeName) {
+    @-webkit-keyframes #{$animeName} {
+        @content;
+    }
+    @-moz-keyframes #{$animeName} {
+        @content;
+    }
+    @keyframes #{$animeName} {
+        @content;
+    }
+}
